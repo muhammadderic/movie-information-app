@@ -6,7 +6,10 @@ import { FiThumbsUp } from 'react-icons/fi';
 import { getYearFromDate } from '@/utils/dateUtils';
 
 const Card = ({ result }) => {
-  const releaseDate = getYearFromDate(result.release_date)
+  let releaseDate = result.release_date || result.first_air_date
+  if (releaseDate) {
+    releaseDate = getYearFromDate(releaseDate)
+  }
 
   return (
     <div className="group sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200">
@@ -20,7 +23,7 @@ const Card = ({ result }) => {
       <div className="py-2 px-4">
         <Link href={`/movie/${result.id}`}>
           <h3 className="text-lg font-bold truncate cursor-pointer">
-            {result.title}
+            {result.title || result.name}
           </h3>
         </Link>
         <p className="my-1 line-clamp-2 text-sm">
