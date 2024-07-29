@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
 
+[my linkedIn][linkedin-url]
+
+<br />
+<div align="center">
+  <h3 align="center">Movie Information App</h3>
+
+  <p align="center">
+    Get Started with Our Movie Information App: Simple CRUD Operations, with More Features Coming Soon.
+    <br />
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <a href="#built-with">Built With</a>\
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<img src="./movie-info-app.jpeg" width="650">
+
+Welcome to our Movie Information App, a straightforward platform designed to help you manage your movie collection with ease. Currently, our React-based app supports basic CRUD operations—create, read, update, and delete—allowing you to organize your movies efficiently. While our current focus is on providing a robust foundation, we are committed to enhancing and expanding the app with more features in the future. Join us on this journey as we continue to improve and enrich your movie management experience.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Here are a few examples.
+
+* [Next.js][Next-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-## Learn More
+1. Clone the repo
+   ```sh
+   git clone https://github.com/muhammadderic/movie-information-app.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn more about Next.js, take a look at the following resources:
+<!-- USAGE EXAMPLES -->
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The client will run in your browser with URL "http://localhost:3000", and
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-url]: https://linkedin.com/in/muhammad-donny-ericson
+[Next-url]: https://nextjs.org/
