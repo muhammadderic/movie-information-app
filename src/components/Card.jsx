@@ -13,13 +13,25 @@ const Card = ({ result }) => {
 
   return (
     <div className="group sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200">
-      <Image
-        src={`https://image.tmdb.org/t/p/original/${result.backdrop_path}`}
-        height={200}
-        width={500}
-        className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300"
-        alt={''}
-      />
+      {
+        result.backdrop_path ? (
+          <Image
+            src={`https://image.tmdb.org/t/p/original/${result.backdrop_path}`}
+            height={200}
+            width={500}
+            className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300"
+            alt={''}
+          />
+        ) : (
+          <Image
+            src={`https://image.tmdb.org/t/p/original/${result.poster_path}`}
+            height={200}
+            width={500}
+            className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300 object-contain overflow-hidden"
+            alt=""
+          />
+        )
+      }
       <div className="py-2 px-4">
         <Link href={`/movie/${result.id}`}>
           <h3 className="text-lg font-bold truncate cursor-pointer">
