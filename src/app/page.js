@@ -1,3 +1,5 @@
+import Navbar from "@/components/Navbar";
+import SearchBox from "@/components/SearchBox";
 import ShowMovies from "@/components/ShowMovies";
 
 export default async function Home({ searchParams }) {
@@ -16,6 +18,8 @@ export default async function Home({ searchParams }) {
 
   return (
     <main>
+      <Navbar />
+      <SearchBox />
       <ShowMovies results={results} />
     </main>
   );

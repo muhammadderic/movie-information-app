@@ -1,9 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import Providers from "./Providers";
-import Navbar from "@/components/Navbar";
-import SearchBox from "@/components/SearchBox";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +16,6 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} sm:p-4`}>
         <Providers>
           <Header />
-          <Navbar />
-          <SearchBox />
           {children}
         </Providers>
       </body>
