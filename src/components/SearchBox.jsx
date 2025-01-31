@@ -24,7 +24,7 @@ const SearchBox = () => {
         onChange={(e) => setSearch(e.target.value)}
       />
       <button
-        className='cursor-pointer px-4 text-amber-600 disabled:text-gray-400 sm:hover:shadow-slate-400 sm:shadow-md rounded-md'
+        className='cursor-pointer px-4 text-gray-600 hover:text-amber-500 rounded-md border border-gray-500 hover:border-amber-600'
         disabled={search === ''}
       >
         Search
